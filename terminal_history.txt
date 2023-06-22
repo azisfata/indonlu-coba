@@ -1,0 +1,7 @@
+Set-ExecutionPolicy Bypass -Scope Process 
+
+.\saenv\Scripts\activate
+
+cat (Get-PSReadlineOption).HistorySavePath
+
+Remove-Item (Get-PSReadlineOption).HistorySavePath
